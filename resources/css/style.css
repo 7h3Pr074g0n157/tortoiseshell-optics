@@ -55,6 +55,7 @@ header img, footer img{
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 main{
@@ -104,4 +105,52 @@ footer{
 }
 footer span{
   padding: 4rem 0rem 4rem 4rem;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: auto auto;
+  }
+  .banner{
+    height: 22rem;
+  }
+  .slogan{
+    float: right;
+    padding: 0.75rem 4rem;
+    position: relative;
+    top: 5rem;
+    background-color: white;
+    font-size: 1.33rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: auto auto;
+  }
+  .icons{
+    width: 100%;
+    margin-top: 3.77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner{
+    height: 17rem;
+  }
+  .slogan{
+    width: 100%;
+    padding: 1rem auto;
+    position: relative;
+    top: 9rem;
+    background-color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
 }
