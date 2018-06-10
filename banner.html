@@ -17,18 +17,20 @@
       margin-right: 1rem;
     }
     .banner{
-      height: 30rem;
+      height: 31rem;
       background-image: url('./resources/images/glasses-bg.png');
       background-repeat: no-repeat;
       background-size: cover;
+    }
+    .header-content{
+      position: relative;
+      top: 1rem;
     }
     .header{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: space-between;
-      position: relative;
-      top: 1rem;
       background-color: cadetblue;
       color: white;
       text-transform: capitalize;
@@ -55,7 +57,8 @@
       float: right;
       padding: 1.5rem 5rem;
       position: relative;
-      top: 14rem;
+      top: 10rem;
+      right: -2rem;
       background-color: white;
       font-size: 2rem;
       font-weight: bold;
@@ -69,19 +72,23 @@
   </head>
   <body>
     <section class="banner">
+      <div class="header-content">
       <div class="container header">
         <header>
           <span><img src="./resources/images/logo-white.png" alt="Logo" /></span><span>Tortoiseshell Optics</span>
         </header>
+
         <nav>
           <span><a href="#">services</a></span><span><a href="#">products</a></span><span><a href="#">contact</a></span>
         </nav>
       </div>
+
       <div class="container">
         <h1 class="slogan">
           Don't just look, see.
         </h1>
       </div>
+</div>
     </section>
   </body>
 </html>
