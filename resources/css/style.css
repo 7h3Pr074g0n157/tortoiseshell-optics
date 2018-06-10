@@ -13,18 +13,20 @@ header img, footer img{
   margin-right: 1rem;
 }
 .banner{
-  height: 30rem;
+  height: 31rem;
   background-image: url('./../images/glasses-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.header-content{
+  position: static;
+  top: 1rem;
 }
 .header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: space-between;
-  position: relative;
-  top: 1rem;
   background-color: cadetblue;
   color: white;
   text-transform: capitalize;
@@ -48,10 +50,11 @@ header img, footer img{
   align-items: center;
 }
 .slogan{
-  float: right;
   padding: 1.5rem 5rem;
+  float: right;
   position: relative;
-  top: 14rem;
+  top: 10rem;
+  right: -2rem;
   background-color: white;
   font-size: 2rem;
   font-weight: bold;
