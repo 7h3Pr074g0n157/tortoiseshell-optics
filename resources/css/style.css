@@ -1,14 +1,16 @@
 /*** Tortoiseshell Optics ***/
 html,body{
   font-size: 18px;
+}
+.top-wrap, .main-section, .footer-section{
+  font-family: Helvetica, sans-serif;
   line-height: 1.4;
 }
-
 .container{
   width: 960px;
   height: auto;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
 .banner{
@@ -17,11 +19,12 @@ html,body{
   background-size: cover;
   margin-bottom: 3rem;
 }
-
-.top-section{
-  background-color: cadetblue;
+.top-wrap{
   position: relative;
   top: 1rem;
+}
+.top-section{
+  background-color: cadetblue;
   display: flex;
   flex-direction: row;
   padding: 1rem 2rem;
@@ -47,20 +50,17 @@ html,body{
   text-transform: capitalize;
 }
 .top-section span{
-  font-family: Helvetica;
   font-size: 1rem;
-  line-height: 1.4;
   color: white;
 }
 
 .slogan{
+  float: right;
   position: relative;
   top: 10rem;
   right: -2rem;
-  float: right;
   padding: 1.5rem 5rem;
   background-color: white;
-  font-family: Helvetica;
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
@@ -89,13 +89,10 @@ html,body{
 }
 .caption-wrap p{
   width: 3.5rem;
-  font-family: Helvetica;
   font-size: 1rem;
-  line-height: 1.4;
   text-transform: capitalize;
   text-align: center;
 }
-
 .articles-section{
   margin-bottom: 5rem;
 }
@@ -115,22 +112,53 @@ html,body{
   width: 10rem;
   background-color: cadetblue;
   text-transform: uppercase;
-  font-family: Helvetica;
   font-weight: bold;
   font-size: 1rem;
-  line-height: 1.4;
   color: white;
   padding:0.5rem 1.25rem;
 }
 .text-wrap p{
-  font-family: Helvetica;
   font-size: 1rem;
-  line-height: 1.4;
 }
-footer{
-  background-color: red;
+.footer-section{
+  background-color: azure;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 4rem;
+}
+.footer-item img{
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .container{
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+  .banner{
+    height: 22rem;
+    background-image: url('./../images/glasses-bg.png');
+    background-size: cover;
+    margin-bottom: 3rem;
+  }
+  .top-wrap{
+    position: static;
+    top: 01rem;
+  }
+  .slogan{
+    float: right;
+    position: relative;
+    top: 5rem;
+    right: -2rem;
+    padding: 1.5rem 5rem;
+    background-color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
 }
