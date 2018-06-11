@@ -154,11 +154,29 @@ html,body{
     float: right;
     position: relative;
     top: 5rem;
-    right: -2rem;
-    padding: 1.5rem 5rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
     background-color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.33rem;
     line-height: 1.2;
+  }
+  .icons-section{
+    margin-bottom: 3rem;
+  }
+  .articles-section{
+    margin-bottom: 5rem;
+  }
+  .footer-section{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem;
+  }
+  .footer-item img{
+    height: 1.5rem;
+    padding-right: 1rem;
   }
 }
