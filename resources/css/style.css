@@ -39,6 +39,9 @@ html,body{
   height: 1.5rem;
   padding-right: 1rem;
 }
+span.nav-menu{
+  display: none;
+}
 .navigation-container{
   display: flex;
   flex-direction: row;
@@ -148,7 +151,7 @@ html,body{
   }
   .top-wrap{
     position: static;
-    top: 01rem;
+    top: 0rem;
   }
   .slogan{
     float: right;
@@ -164,6 +167,7 @@ html,body{
   .icons-section{
     margin-bottom: 3rem;
   }
+
   .articles-section{
     margin-bottom: 5rem;
   }
@@ -180,3 +184,130 @@ html,body{
     padding-right: 1rem;
   }
 }
+
+@media only screen and (max-width: 470px){
+  span.nav-item, span.company-name{
+    display: none;
+  }
+  span.nav-menu{
+    display: flex;
+  }
+  html,body{
+    font-size: 18px;
+  }
+  .top-wrap, .main-section, .footer-section{
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4;
+  }
+  .container{
+    width: 100%;
+    height: auto;
+    padding: 0 0;
+    margin: 0 auto;
+  }
+
+  .banner{
+    width: 100%;
+    height: 17rem;
+    background-image: url('./../images/glasses-bg.png');
+    background-size: cover;
+    background-position: 20%;
+    margin-bottom: 3.77rem;
+  }
+  .top-wrap{
+    width: 100%;
+    position: static;
+    top: 0rem;
+  }
+  .top-section{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+  .header-item img{
+    height: 1.5rem;
+    padding-right: 1rem;
+  }
+  .top-section span{
+    font-size: 1rem;
+    color: white;
+  }
+
+  .slogan{
+    position: relative;
+    top: 9rem;
+    padding: 1rem auto;
+    background-color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .icons-section{
+    margin-bottom: 3rem;
+  }
+  .icons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .icon-item{
+    width: 5rem;
+    height: 8rem;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .img-wrap img{
+    width: 3.5rem;
+  }
+  .caption-wrap p{
+    width: 3.5rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .articles-section{
+    margin-bottom: 5rem;
+  }
+  .articles-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .article-item{
+    width: 35%;
+    margin: 0 5%;
+  }
+  .heading-wrap{
+    margin-bottom: 1rem;
+  }
+  .heading-wrap h3{
+    width: 10rem;
+    background-color: cadetblue;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    padding:0.5rem 1.25rem;
+  }
+  .text-wrap p{
+    font-size: 1rem;
+  }
+  .footer-section{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem;
+  }
+  .footer-item img{
+    height: 1.5rem;
+    padding-right: 1rem;
+  }
