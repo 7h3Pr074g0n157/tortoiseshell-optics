@@ -235,32 +235,36 @@ span.nav-menu{
   }
 
   .slogan{
+    width: 100%;
     position: relative;
     top: 9rem;
-    padding: 1rem auto;
+    padding: 1rem 0;
     background-color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.2;
     margin: 0;
+    text-align: center;
   }
 
   .icons-section{
-    margin-bottom: 3rem;
+    margin-bottom: 3.77rem;
   }
   .icons-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .icon-item{
     width: 5rem;
     height: 8rem;
-    margin-right: 6rem;
+    margin-right: 0rem;
+    margin-bottom: 1.54rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   .img-wrap img{
@@ -268,7 +272,7 @@ span.nav-menu{
   }
   .caption-wrap p{
     width: 3.5rem;
-    font-size: 1rem;
+    font-size: 0.77rem;
     text-transform: capitalize;
     text-align: center;
   }
@@ -277,27 +281,29 @@ span.nav-menu{
   }
   .articles-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
   .article-item{
-    width: 35%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0 0;
+    margin-bottom: 4rem;
   }
   .heading-wrap{
     margin-bottom: 1rem;
   }
   .heading-wrap h3{
-    width: 10rem;
+    width: 100%;
     background-color: cadetblue;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
     color: white;
     padding:0.5rem 1.25rem;
+    text-align: center;
   }
   .text-wrap p{
-    font-size: 1rem;
+    font-size: 0.77rem;
   }
   .footer-section{
     background-color: azure;
@@ -305,9 +311,11 @@ span.nav-menu{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     padding: 4rem;
   }
   .footer-item img{
     height: 1.5rem;
     padding-right: 1rem;
   }
+}
